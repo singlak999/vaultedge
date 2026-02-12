@@ -1,0 +1,17 @@
+{
+  "name": "vaultedge",
+  "version": "1.0.0",
+  "description": "VaultEdge — Professional Finance Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "seed": "node seed-users.js",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3",
+    "csv-parser": "^3.0.0"
+  }
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VaultEdge — Your Wealth, Secured &amp; Simplified</title>
+    <meta name="description"
+        content="VaultEdge is a premium personal finance platform for tracking investments, expenses, and portfolio performance." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/views/landing.css" />
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="10" fill="url(#lgGrad)" />
+                    <path d="M12 28V18L20 12L28 18V28" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M17 28V22H23V28" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle cx="20" cy="17" r="2" fill="#fff" />
+                    <defs>
+                        <linearGradient id="lgGrad" x1="0" y1="0" x2="40" y2="40">
+                            <stop stop-color="#00d68f" />
+                            <stop offset="1" stop-color="#7b61ff" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="nav-logo-text">VaultEdge</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="/login" class="nav-btn">Sign In</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge anim-fade" style="--d:0">
+                <span class="badge-dot"></span>
+                Trusted by 50,000+ investors worldwide
+            </div>
+            <h1 class="hero-title anim-fade" style="--d:1">
+                Your Wealth,<br />
+                <span class="hero-gradient">Secured &amp; Simplified</span>
+            </h1>
+            <p class="hero-subtitle anim-fade" style="--d:2">
+                Take control of your finances with real-time portfolio tracking,
+                AI-powered insights, and institutional-grade security — all in one elegant dashboard.
+            </p>
+            <div class="hero-actions anim-fade" style="--d:3">
+                <a href="/login" class="btn btn-primary">
+                    Get Started
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="hero-stats anim-fade" style="--d:4">
+                <div class="hero-stat">
+                    <span class="hero-stat-value">$4.8B+</span>
+                    <span class="hero-stat-label">Assets Managed</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value">99.99%</span>
+                    <span class="hero-stat-label">Uptime</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value">256-bit</span>
+                    <span class="hero-stat-label">Encryption</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual anim-fade" style="--d:3">
+            <div class="dashboard-preview">
+                <div class="preview-topbar">
+                    <div class="preview-dots"><span></span><span></span><span></span></div>
+                    <span class="preview-url">vaultedge.com/dashboard</span>
+                </div>
+                <div class="preview-body">
+                    <div class="preview-card-row">
+                        <div class="preview-mini-card pc1"></div>
+                        <div class="preview-mini-card pc2"></div>
+                        <div class="preview-mini-card pc3"></div>
+                    </div>
+                    <div class="preview-chart">
+                        <svg viewBox="0 0 300 80" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#00d68f" stop-opacity="0.3" />
+                                    <stop offset="100%" stop-color="#00d68f" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M0 60 Q30 55 60 50 T120 35 T180 25 T240 20 T300 10 V80 H0Z" fill="url(#chartFill)"
+                                class="preview-chart-area" />
+                            <path d="M0 60 Q30 55 60 50 T120 35 T180 25 T240 20 T300 10" fill="none" stroke="#00d68f"
+                                stroke-width="2" class="preview-chart-line" />
+                        </svg>
+                    </div>
+                    <div class="preview-rows">
+                        <div class="preview-row"></div>
+                        <div class="preview-row"></div>
+                        <div class="preview-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <span class="section-tag">Features</span>
+            <h2 class="section-title">Everything you need to<br /><span class="text-gradient">manage your wealth</span>
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon fi-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M7 16l4-5 4 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Analytics</h3>
+                    <p class="feature-desc">Track your portfolio performance with live charts, interactive graphs, and
+                        AI-driven insights updated every second.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Bank-Grade Security</h3>
+                    <p class="feature-desc">256-bit AES encryption, two-factor authentication, and SOC 2 compliance keep
+                        your financial data fortress-secure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-violet">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 3v9l6.36 3.64" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Budgeting</h3>
+                    <p class="feature-desc">Automated expense categorisation, spending alerts, and custom budgets help
+                        you save more and spend wisely.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="5" width="20" height="14" rx="2.5" stroke="currentColor" stroke-width="2" />
+                            <path d="M2 10h20" stroke="currentColor" stroke-width="2" />
+                            <path d="M6 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Multi-Account Linking</h3>
+                    <p class="feature-desc">Connect all your bank accounts, credit cards, and investment portfolios in
+                        one unified dashboard view.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-coral">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Transfers</h3>
+                    <p class="feature-desc">Send and receive money instantly with zero fees. Support for 40+ currencies
+                        and international wire transfers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94L6.73 20.2a2.12 2.12 0 01-3-3l6.74-6.74a6 6 0 017.94-7.94L14.7 6.3z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">API & Integrations</h3>
+                    <p class="feature-desc">Extend VaultEdge with RESTful APIs and 200+ integrations including
+                        Quickbooks, Xero, and Plaid.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <span class="section-tag">Testimonials</span>
+            <h2 class="section-title">What our clients<br /><span class="text-gradient">are saying</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"VaultEdge completely transformed how I manage my investments. The
+                        real-time analytics are incredible and the dashboard is buttery smooth."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta1">SM</div>
+                        <div>
+                            <span class="testimonial-name">Sarah Mitchell</span>
+                            <span class="testimonial-role">Portfolio Manager, Bridgewater</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The security features give me complete peace of mind. I've consolidated
+                        all my accounts and the overview is simply fantastic."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta2">RK</div>
+                        <div>
+                            <span class="testimonial-name">Raj Kapoor</span>
+                            <span class="testimonial-role">CTO, FinScope Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I switched from three different apps to VaultEdge alone. The budgeting
+                        tools helped me save 30% more each month. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta3">EM</div>
+                        <div>
+                            <span class="testimonial-name">Emily Chen</span>
+                            <span class="testimonial-role">Freelance Consultant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title" style="text-align:left">Let's talk about<br /><span
+                            class="text-gradient">your financial goals</span></h2>
+                    <p class="contact-desc">Have questions? Fill out the form and our team will reach out within 24
+                        hours.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>support@vaultedge.io</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.86 19.86 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            <span>+1 (800) 555-VAULT</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            <span>New York, NY 10004</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="contactName">Full Name</label>
+                        <input type="text" class="form-input" id="contactName" name="name" placeholder="John Doe"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contactEmail">Email Address</label>
+                        <input type="email" class="form-input" id="contactEmail" name="email"
+                            placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contactSubject">Subject</label>
+                        <input type="text" class="form-input" id="contactSubject" name="subject"
+                            placeholder="How can we help?" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contactMessage">Message</label>
+                        <textarea class="form-input form-textarea" id="contactMessage" name="message"
+                            placeholder="Tell us more..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
+                        Send Message
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="nav-logo" style="pointer-events:none">
+                        <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="10" fill="url(#lgGrad2)" />
+                            <path d="M12 28V18L20 12L28 18V28" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 28V22H23V28" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="20" cy="17" r="2" fill="#fff" />
+                            <defs>
+                                <linearGradient id="lgGrad2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#00d68f" />
+                                    <stop offset="1" stop-color="#7b61ff" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="nav-logo-text">VaultEdge</span>
+                    </div>
+                    <p class="footer-desc">Your wealth, secured & simplified. The premium finance platform built for
+                        modern investors.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Product</h4>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#" class="footer-link">Pricing</a>
+                    <a href="#" class="footer-link">Security</a>
+                    <a href="#" class="footer-link">API Docs</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Company</h4>
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Legal</h4>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Compliance</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 VaultEdge. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.querySelector('.nav-links');
+        mobileBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        // Contact form submit
+        const form = document.getElementById('contactForm');
+        const statusEl = document.getElementById('formStatus');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('contactSubmitBtn');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            const data = Object.fromEntries(new FormData(form));
+            try {
+                const res = await fetch('/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const json = await res.json();
+                statusEl.textContent = json.message;
+                statusEl.className = 'form-status ' + (json.success ? 'success' : 'error');
+                if (json.success) form.reset();
+            } catch {
+                statusEl.textContent = 'Network error. Please try again.';
+                statusEl.className = 'form-status error';
+            }
+            btn.disabled = false;
+            btn.innerHTML = 'Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.feature-card, .testimonial-card, .contact-wrapper').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Simple floating particles
+        (function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.animationDelay = (Math.random() * 8) + 's';
+                p.style.animationDuration = (6 + Math.random() * 8) + 's';
+                p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+                container.appendChild(p);
+            }
+        })();
+    </script>
+</body>
+
+</html>

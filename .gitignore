@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.log
+*.sqlite
+*.db
+.env
+data/users.csv
+data/contacts.csv
